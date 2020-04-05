@@ -10,7 +10,7 @@ namespace AppCelticsLayouts
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new AppCelticsLayouts.Master.Menu();
         }
 
         protected override void OnStart()
