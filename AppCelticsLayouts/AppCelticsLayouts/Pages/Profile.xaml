@@ -6,10 +6,33 @@
              mc:Ignorable="d"
              x:Class="AppCelticsLayouts.Pages.Profile">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Profile Page"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+        <StackLayout Spacing="0">
+            <RelativeLayout VerticalOptions="Start" HeightRequest="300" BackgroundColor="Green">
+                                
+            </RelativeLayout>
+            <Grid BackgroundColor="#0D1F2D" HeightRequest="120">                
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+
+                <StackLayout Grid.Column="0" Grid.Row="0" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" >
+                    <Label Text="18" TextColor="White" FontSize="32" />
+                    <Label Text="anos" TextColor="White" FontSize="12" HorizontalTextAlignment="Center"/>                    
+                </StackLayout>
+                <StackLayout Grid.Column="1" Grid.Row="0" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" >
+                    <Label Text="10/01/2000" TextColor="White" FontSize="32" />
+                    <Label Text="nasceu" TextColor="White" FontSize="12" HorizontalTextAlignment="Center"/>
+                </StackLayout>
+                
+            </Grid>
+            <StackLayout Padding="30" VerticalOptions="FillAndExpand">
+                <Label Text="txt" />
+            </StackLayout>
+            
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
