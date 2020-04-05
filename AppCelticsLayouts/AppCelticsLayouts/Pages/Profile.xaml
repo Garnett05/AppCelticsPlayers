@@ -16,8 +16,8 @@
                        RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=.35}"
                        WidthRequest="150"
                        x:Name="Perfil"/> 
-                <Label Text="Kevin Garnett" x:Name="PlayerName"
-                       RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToView, ElementName=Perfil, Property=X, Factor=1,Constant=30}"
+                <Label Text="Kevin Garnett" x:Name="PlayerName" FontSize="20" TextColor="Black"
+                       RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToView, ElementName=Perfil, Property=X, Factor=1,Constant=15}"
                        RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToView, ElementName=Perfil, Property=Y, Factor=1, Constant=150}"/>
                        
             </RelativeLayout>
@@ -31,17 +31,23 @@
                 </Grid.RowDefinitions>
 
                 <StackLayout Grid.Column="0" Grid.Row="0" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" >
-                    <Label Text="18" TextColor="White" FontSize="32" />
-                    <Label Text="anos" TextColor="White" FontSize="12" HorizontalTextAlignment="Center"/>                    
+                    <Label Text="43" TextColor="White" FontSize="32" />
+                    <Label Text="age" TextColor="White" FontSize="12" HorizontalTextAlignment="Center"/>                    
                 </StackLayout>
                 <StackLayout Grid.Column="1" Grid.Row="0" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" >
-                    <Label Text="10/01/2000" TextColor="White" FontSize="32" />
-                    <Label Text="nasceu" TextColor="White" FontSize="12" HorizontalTextAlignment="Center"/>
+                    <Label Text="19/05/1976" TextColor="White" FontSize="32" />
+                    <Label Text="born at" TextColor="White" FontSize="12" HorizontalTextAlignment="Center"/>
                 </StackLayout>
                 
             </Grid>
             <StackLayout Padding="30" VerticalOptions="FillAndExpand">
-                <Label Text="txt" />
+                <Label TextColor="Black" Text="Kevin Maurice Garnett (born May 19, 1976) is an American former professional basketball player who played for
+21 seasons in the National Basketball Association (NBA). Known for his intensity, defensive ability, and versatility, 
+Garnett is considered one of the greatest power forwards of all time. 
+He is one of four NBA players to win both the Most Valuable Player and the Defensive Player of the Year awards. In high school, 
+Garnett was a 1995 McDonald's All-American at Farragut Career Academy and won a national player of the year award. He entered the 1995 NBA draft, 
+where he was selected with the fifth overall pick by the Minnesota Timberwolves and became the first NBA player drafted directly out of 
+high school in 20 years." />
             </StackLayout>
 
         </StackLayout>

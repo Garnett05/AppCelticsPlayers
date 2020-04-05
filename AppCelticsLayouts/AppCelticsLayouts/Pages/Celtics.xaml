@@ -28,8 +28,8 @@
                 </RelativeLayout>
                 <Label Text="NBA Franchise" HorizontalOptions="CenterAndExpand" VerticalOptions="Center" TextColor="Black" FontSize="48"/>
             </StackLayout>
-            <StackLayout>
-                <Label Text="Most franchise in NBA history with SEVENTHEEN TITLES!!!!!!!!!!!!!" FontSize="24"/>
+            <StackLayout Padding="15">
+                <Label Text="Most franchise in NBA history with seventeen titles" FontSize="30"/>
             </StackLayout>
         </StackLayout>
     </ContentPage.Content>
