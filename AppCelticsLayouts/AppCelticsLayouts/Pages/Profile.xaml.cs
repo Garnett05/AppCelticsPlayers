@@ -16,7 +16,8 @@ namespace AppCelticsLayouts.Pages
     {
         public Profile()
         {
-            
+            Player play = new Player();
+            play.Name = 
             InitializeComponent();
         }
     }
