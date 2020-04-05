@@ -6,10 +6,31 @@
              mc:Ignorable="d"
              x:Class="AppCelticsLayouts.Pages.Celtics">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+        <StackLayout Spacing="0">
+            <StackLayout BackgroundColor="White" Padding="30">
+                <Image HeightRequest="200"  Source="celticsPNG.png" HorizontalOptions="Center" VerticalOptions="Center"/>
+            </StackLayout>
+            <StackLayout HeightRequest="100" BackgroundColor="Green">
+                <Label Text="Celtics" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" TextColor="White" FontSize="54" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <RelativeLayout HorizontalOptions="FillAndExpand" Margin="10">
+                    <BoxView x:Name="boxOne" BackgroundColor="#ADFF2F" WidthRequest="30" HeightRequest="30"/>
+                    <BoxView x:Name="boxTwo" BackgroundColor="#00FF7F" WidthRequest="30" HeightRequest="30"
+                             RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToView, ElementName=boxOne, Property=X, Factor=1,Constant=12}"
+                             RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToView, ElementName=boxOne, Property=Y, Factor=1,Constant=12}"
+                             />
+                    
+                    <BoxView BackgroundColor="#008000" WidthRequest="30" HeightRequest="30"
+                             RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToView, ElementName=boxTwo, Property=X, Factor=1,Constant=12}"
+                             RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToView, ElementName=boxTwo, Property=Y, Factor=1,Constant=12}"
+                             />
+                </RelativeLayout>
+                <Label Text="NBA Franchise" HorizontalOptions="CenterAndExpand" VerticalOptions="Center" TextColor="Black" FontSize="48"/>
+            </StackLayout>
+            <StackLayout>
+                <Label Text="Most franchise in NBA history with SEVENTHEEN TITLES!!!!!!!!!!!!!" FontSize="24"/>
+            </StackLayout>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

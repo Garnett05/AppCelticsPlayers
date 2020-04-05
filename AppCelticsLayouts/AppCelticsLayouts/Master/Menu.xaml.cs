@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using AppCelticsLayouts.Model;
 
 namespace AppCelticsLayouts.Master
 {
@@ -16,13 +17,29 @@ namespace AppCelticsLayouts.Master
         {
             InitializeComponent();
         }
-        private void GoCelticsPage(object sender, EventArgs args)
+        public static Player CelticsPlayer(string name, int age, string birthDate)
         {
-            Navigation.PushAsync(new Pages.Profile());
+            Player player = new Player { Name = name, Age = age, BirthDate = birthDate };
+            return player;
         }
-        private void GoProfilePage(object sender, EventArgs args)
+        private void GoCelticsPage(object sender, EventArgs args)
+        {            
+            Detail = new Pages.Celtics();
+        }
+        private void GoRondoPage(object sender, EventArgs args)
         {
-            Navigation.PushAsync(new Pages.Celtics());
+            CelticsPlayer("Rajon Rondo", 34, "22/02/1986");
+            Detail = new Pages.Profile();
+        }
+        private void GoPiercePage(object sender, EventArgs args)
+        {
+            CelticsPlayer("Paul Pierce", 42, "13/10/1977");
+            Detail = new Pages.Profile();
+        }
+        private void GoGarnettPage(object sender, EventArgs args)
+        {
+            CelticsPlayer("Kevin Garnett", 43, "19/05/1976");
+            Detail = new Pages.Profile();
         }
     }
 }

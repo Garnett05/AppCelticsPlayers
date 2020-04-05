@@ -85,7 +85,6 @@
     <AndroidResource Include="Resources\mipmap-xxxhdpi\icon.png" />
     <AndroidResource Include="Resources\mipmap-xxxhdpi\launcher_foreground.png" />
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\AppCelticsLayouts\AppCelticsLayouts.csproj">
       <Project>{A49909AF-A4AE-47DC-BF2C-19339EE84483}</Project>
@@ -94,6 +93,12 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\celticsPNG.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\kg01.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\fundo.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>

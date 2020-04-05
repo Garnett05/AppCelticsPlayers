@@ -14,16 +14,16 @@
                        HeightRequest="225" WidthRequest="225"/>
                 </StackLayout>
                 <StackLayout VerticalOptions="Center" Spacing="15">
-                    <Button Text="Rajon Rondo" FontSize="26" TextColor="White" BackgroundColor="Transparent" Clicked="GoProfilePage"/>
-                    <Button Text="Paul Pierce" FontSize="26" TextColor="White" BackgroundColor="Transparent" Clicked="GoProfilePage"/>
-                    <Button Text="Kevin Garnett" FontSize="26" TextColor="White" BackgroundColor="Transparent" Clicked="GoProfilePage"/>
+                    <Button Text="Rajon Rondo" FontSize="26" TextColor="White" BackgroundColor="Transparent" Clicked="GoRondoPage"/>
+                    <Button Text="Paul Pierce" FontSize="26" TextColor="White" BackgroundColor="Transparent" Clicked="GoPiercePage"/>
+                    <Button Text="Kevin Garnett" FontSize="26" TextColor="White" BackgroundColor="Transparent" Clicked="GoGarnettPage"/>
                     <Button Text="About the Celtics" FontSize="26" TextColor="White" BackgroundColor="Transparent" Clicked="GoCelticsPage"/>
                 </StackLayout>
             </StackLayout>
         </ContentPage>
     </MasterDetailPage.Master>
-    
-    <MasterDetailPage.Detail>        
-                <pag:Profile />        
+
+    <MasterDetailPage.Detail>
+        <pag:Celtics />
     </MasterDetailPage.Detail>
 </MasterDetailPage>

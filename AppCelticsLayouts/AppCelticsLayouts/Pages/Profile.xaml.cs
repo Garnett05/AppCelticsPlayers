@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using AppCelticsLayouts.Master;
+using AppCelticsLayouts.Model;
 
 namespace AppCelticsLayouts.Pages
 {
@@ -14,6 +16,7 @@ namespace AppCelticsLayouts.Pages
     {
         public Profile()
         {
+            
             InitializeComponent();
         }
     }
